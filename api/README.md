@@ -55,3 +55,5 @@ deleteEmployeeById(...)
 
 ### Testing
 Please include proper integration and/or unit tests.
+
+Added Employee.postman_collection.json postman collection for testing
