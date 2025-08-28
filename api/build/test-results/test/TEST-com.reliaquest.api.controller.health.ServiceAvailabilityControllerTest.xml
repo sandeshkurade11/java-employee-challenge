@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reliaquest.api.controller.health.ServiceAvailabilityControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-08-28T15:31:23" hostname="NEW5074-640" time="0.009">
+  <properties/>
+  <testcase name="testHealthCheck()" classname="com.reliaquest.api.controller.health.ServiceAvailabilityControllerTest" time="0.009"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

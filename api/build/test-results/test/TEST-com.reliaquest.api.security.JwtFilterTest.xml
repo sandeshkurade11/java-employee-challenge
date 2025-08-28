@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reliaquest.api.security.JwtFilterTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-08-28T15:31:25" hostname="NEW5074-640" time="0.766">
+  <properties/>
+  <testcase name="testInvalidJwtTokenReturns401()" classname="com.reliaquest.api.security.JwtFilterTest" time="0.73"/>
+  <testcase name="testShouldFilterOtherEndpoints()" classname="com.reliaquest.api.security.JwtFilterTest" time="0.005"/>
+  <testcase name="testValidJwtTokenSetsAuthentication()" classname="com.reliaquest.api.security.JwtFilterTest" time="0.011"/>
+  <testcase name="testMissingAuthorizationHeaderReturns401()" classname="com.reliaquest.api.security.JwtFilterTest" time="0.005"/>
+  <testcase name="testShouldNotFilterAuthEndpoint()" classname="com.reliaquest.api.security.JwtFilterTest" time="0.005"/>
+  <testcase name="testShouldNotFilterHealthEndpoint()" classname="com.reliaquest.api.security.JwtFilterTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

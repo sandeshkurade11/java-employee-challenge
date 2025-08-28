@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reliaquest.api.service.EmployeeServiceTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2025-08-28T15:31:26" hostname="NEW5074-640" time="0.649">
+  <properties/>
+  <testcase name="testSearchEmployeesByNameThrowsException()" classname="com.reliaquest.api.service.EmployeeServiceTest" time="0.07"/>
+  <testcase name="testCreateEmployeeSuccess()" classname="com.reliaquest.api.service.EmployeeServiceTest" time="0.006"/>
+  <testcase name="testGetEmployeeByIdThrowsException()" classname="com.reliaquest.api.service.EmployeeServiceTest" time="0.009"/>
+  <testcase name="testGetEmployeeByIdFound()" classname="com.reliaquest.api.service.EmployeeServiceTest" time="0.005"/>
+  <testcase name="testDeleteEmployeeByIdThrowsException()" classname="com.reliaquest.api.service.EmployeeServiceTest" time="0.006"/>
+  <testcase name="testDeleteEmployeeByIdNotFound()" classname="com.reliaquest.api.service.EmployeeServiceTest" time="0.004"/>
+  <testcase name="testSearchEmployeesByNameFound()" classname="com.reliaquest.api.service.EmployeeServiceTest" time="0.007"/>
+  <testcase name="testGetTop10HighestEarningEmployeeNamesSuccess()" classname="com.reliaquest.api.service.EmployeeServiceTest" time="0.006"/>
+  <testcase name="testGetHighestSalaryEmptyList()" classname="com.reliaquest.api.service.EmployeeServiceTest" time="0.443"/>
+  <testcase name="testGetAllEmployeesSuccess()" classname="com.reliaquest.api.service.EmployeeServiceTest" time="0.004"/>
+  <testcase name="testCreateEmployeeThrowsException()" classname="com.reliaquest.api.service.EmployeeServiceTest" time="0.009"/>
+  <testcase name="testGetTop10HighestEarningEmployeeNamesThrowsException()" classname="com.reliaquest.api.service.EmployeeServiceTest" time="0.005"/>
+  <testcase name="testSearchEmployeesByNameNotFound()" classname="com.reliaquest.api.service.EmployeeServiceTest" time="0.008"/>
+  <testcase name="testGetAllEmployeesThrowsException()" classname="com.reliaquest.api.service.EmployeeServiceTest" time="0.007"/>
+  <testcase name="testGetHighestSalaryThrowsException()" classname="com.reliaquest.api.service.EmployeeServiceTest" time="0.006"/>
+  <testcase name="testGetHighestSalarySuccess()" classname="com.reliaquest.api.service.EmployeeServiceTest" time="0.006"/>
+  <testcase name="testDeleteEmployeeByIdSuccess()" classname="com.reliaquest.api.service.EmployeeServiceTest" time="0.005"/>
+  <testcase name="testGetEmployeeByIdNotFound()" classname="com.reliaquest.api.service.EmployeeServiceTest" time="0.005"/>
+  <system-out><![CDATA[2025-08-28T21:01:26.274+05:30  INFO 35180 --- [employee-api] [    Test worker] c.r.api.service.EmployeeService          : Searching employees by name : John
+2025-08-28T21:01:26.281+05:30  INFO 35180 --- [employee-api] [    Test worker] c.r.api.service.EmployeeService          : Creating employee: New
+2025-08-28T21:01:26.290+05:30  INFO 35180 --- [employee-api] [    Test worker] c.r.api.service.EmployeeService          : Fetching employee by id: 3
+2025-08-28T21:01:26.311+05:30  INFO 35180 --- [employee-api] [    Test worker] c.r.api.service.EmployeeService          : Fetching employee by id: 1
+2025-08-28T21:01:26.317+05:30  INFO 35180 --- [employee-api] [    Test worker] c.r.api.service.EmployeeService          : Deleting employee by id: 3
+2025-08-28T21:01:26.317+05:30  INFO 35180 --- [employee-api] [    Test worker] c.r.api.service.EmployeeService          : Fetching employee by id: 3
+2025-08-28T21:01:26.323+05:30  INFO 35180 --- [employee-api] [    Test worker] c.r.api.service.EmployeeService          : Deleting employee by id: 2
+2025-08-28T21:01:26.323+05:30  INFO 35180 --- [employee-api] [    Test worker] c.r.api.service.EmployeeService          : Fetching employee by id: 2
+2025-08-28T21:01:26.328+05:30  INFO 35180 --- [employee-api] [    Test worker] c.r.api.service.EmployeeService          : Searching employees by name : Ja
+2025-08-28T21:01:26.336+05:30  INFO 35180 --- [employee-api] [    Test worker] c.r.api.service.EmployeeService          : Getting top 10 highest earning employees
+2025-08-28T21:01:26.345+05:30  INFO 35180 --- [employee-api] [    Test worker] c.r.api.service.EmployeeService          : Getting highest salary among employees
+2025-08-28T21:01:26.788+05:30  INFO 35180 --- [employee-api] [    Test worker] c.r.api.service.EmployeeService          : Fetching all employees
+2025-08-28T21:01:26.796+05:30  INFO 35180 --- [employee-api] [    Test worker] c.r.api.service.EmployeeService          : Creating employee: New
+2025-08-28T21:01:26.805+05:30  INFO 35180 --- [employee-api] [    Test worker] c.r.api.service.EmployeeService          : Getting top 10 highest earning employees
+2025-08-28T21:01:26.810+05:30  INFO 35180 --- [employee-api] [    Test worker] c.r.api.service.EmployeeService          : Searching employees by name : zzz
+2025-08-28T21:01:26.824+05:30  INFO 35180 --- [employee-api] [    Test worker] c.r.api.service.EmployeeService          : Fetching all employees
+2025-08-28T21:01:26.831+05:30  INFO 35180 --- [employee-api] [    Test worker] c.r.api.service.EmployeeService          : Getting highest salary among employees
+2025-08-28T21:01:26.839+05:30  INFO 35180 --- [employee-api] [    Test worker] c.r.api.service.EmployeeService          : Getting highest salary among employees
+2025-08-28T21:01:26.845+05:30  INFO 35180 --- [employee-api] [    Test worker] c.r.api.service.EmployeeService          : Deleting employee by id: 1
+2025-08-28T21:01:26.847+05:30  INFO 35180 --- [employee-api] [    Test worker] c.r.api.service.EmployeeService          : Fetching employee by id: 1
+2025-08-28T21:01:26.852+05:30  INFO 35180 --- [employee-api] [    Test worker] c.r.api.service.EmployeeService          : Fetching employee by id: 2
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
