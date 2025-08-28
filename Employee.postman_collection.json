@@ -1,0 +1,276 @@
+{
+	"info": {
+		"_postman_id": "1aebd1a8-70c9-4959-a1b7-9ec0899c518c",
+		"name": "Employee",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20688582"
+	},
+	"item": [
+		{
+			"name": "getToken",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJlbnRlcnByaXNlSWRmaWVyIjoiUUEyME1MIiwiYWxnIjoiUlMyNTYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhdXRoXC9yZWFsbXMiLCJleHAiOjE3NDc5MTMzNTcsInVzZXJJZCI6IjY5MzA4IiwidG9rZW4iOiJhY2Nlc3MifQ.oqzq4qVew83RnRPWhMaK_2_tn71yEhIrZMkSKos8Av3yexl99bI5Yb2BwvwOeCMqyuUZ0bGQSc46Cn1QCsMsydBWGJIBMoKf_owt5nDoCviWNU3PFjIuw8oW9qofOxA1ty9OB2i776Pih_wpD0sYB7sFf8c6yBczfo-ZR_I-LLgdlVdoR1ZV-z-KiX5B55FYHdVC3IhIaF6YJDcLnw7dIb_vh09Fw9-3QY5OS1nhznkQ7F95YZmGU2BLuYqeUKWzAmLSh13J7YBDacEPNQU8g7lI3hAYWCc_ogm2bynJ_rarNHjf-3zb_0S6gqwTVAo6Sv0mRkHNk1KF44liJl-OvQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8111/api/v1/auth/token?username=admin&password=password",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8111",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"token"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "admin"
+						},
+						{
+							"key": "password",
+							"value": "password"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllEmployees",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc1NjM4OTUxOCwiZXhwIjoxNzU2MzkzMTE4fQ.MoLvaP54H-yRJv-zb-9K5Uf6hw5ofIaeLCUwsB28WNw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Jane Doe\",\r\n  \"salary\": 120000,\r\n  \"age\": 35,\r\n  \"title\": \"Software Engineer\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8111/api/v1/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8111",
+					"path": [
+						"api",
+						"v1",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getEmployeesByNameSearch",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc1NjM4OTUxOCwiZXhwIjoxNzU2MzkzMTE4fQ.MoLvaP54H-yRJv-zb-9K5Uf6hw5ofIaeLCUwsB28WNw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8111/api/v1/employee/search/sandesh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8111",
+					"path": [
+						"api",
+						"v1",
+						"employee",
+						"search",
+						"sandesh"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getEmployeeById",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc1NjM4OTUxOCwiZXhwIjoxNzU2MzkzMTE4fQ.MoLvaP54H-yRJv-zb-9K5Uf6hw5ofIaeLCUwsB28WNw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8111/api/v1/employee/16cfeebc-954f-44dc-be09-75fc6d4393a5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8111",
+					"path": [
+						"api",
+						"v1",
+						"employee",
+						"16cfeebc-954f-44dc-be09-75fc6d4393a5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getHighestSalary",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc1NjM4OTUxOCwiZXhwIjoxNzU2MzkzMTE4fQ.MoLvaP54H-yRJv-zb-9K5Uf6hw5ofIaeLCUwsB28WNw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8111/api/v1/employee/highestSalary",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8111",
+					"path": [
+						"api",
+						"v1",
+						"employee",
+						"highestSalary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTopTenHighestEarningEmployeeNames",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc1NjM4OTk0NSwiZXhwIjoxNzU2MzkzNTQ1fQ.o601IkwNLW__3oB1IJ-aN56aTcdnFqYztQZBqjDWlhI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8111/api/v1/employee/topTenHighestEarningEmployeeNames",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8111",
+					"path": [
+						"api",
+						"v1",
+						"employee",
+						"topTenHighestEarningEmployeeNames"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createEmployee",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc1NjM4OTk0NSwiZXhwIjoxNzU2MzkzNTQ1fQ.o601IkwNLW__3oB1IJ-aN56aTcdnFqYztQZBqjDWlhI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Sandesh Kurade\",\r\n  \"salary\": 120000,\r\n  \"age\": 25,\r\n  \"title\": \"Software Engineer\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8111/api/v1/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8111",
+					"path": [
+						"api",
+						"v1",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteEmployeeById",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc1NjM4OTk0NSwiZXhwIjoxNzU2MzkzNTQ1fQ.o601IkwNLW__3oB1IJ-aN56aTcdnFqYztQZBqjDWlhI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Sandesh Kurade\",\r\n  \"salary\": 120000,\r\n  \"age\": 25,\r\n  \"title\": \"Software Engineer\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8111/api/v1/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8111",
+					"path": [
+						"api",
+						"v1",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
